@@ -1,0 +1,37 @@
+
+
+****************************************
+Matlab e Python:
+
+Dilate by cross:          1d 2d 3d 4d 5d
+Dilate by cube separated: 1d 2d 3d 4d 5d
+Dilate by cube:           1d 2d 3d 4d 5d
+
+Threshold:                   2d
+Not:                         2d
+Max:                         2d
+Copy:                        2d
+Unpack:                      desnecessario        
+
+
+Passo de verificacao: dilate by cube = dilate by cube separated.
+
+****************************************
+Leptonica:
+
+Dilate by cross rasterop:           2d
+Dilate by cube rasterop:            2d
+Dilate by cube separated rasterop:  2d
+Dilate by cube separated DWA:       2d
+
+Threshold:                   2d
+Not:                         2d
+Max:                         2d
+Copy:                        2d
+Unpack:                      2d
+
+
+Passo de verificacao: dilate by cube rasterop = dilate by cube separated rasterop = dilate by cube separated DWA.
+
+****************************************
+

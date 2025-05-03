@@ -1,0 +1,151 @@
+found 3 platform(s) for opencl
+
+found 2 device(s)
+
+Check not implemented for Windows. Assuming that display is available.
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_EXTENSIONS:
+cl_khr_icd cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_3d_image_writes cl_intel_exec_by_local_thread cl_khr_spir cl_khr_dx9_media_sharing cl_intel_dx9_media_sharing cl_khr_d3d11_sharing cl_khr_gl_sharing cl_khr_fp64 
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_MEM_ALLOC_SIZE: 511.97 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_GLOBAL_MEM_SIZE: 2047.88 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_HEIGHT: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_WIDTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_PARAMETER_SIZE: 3840 bytes
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_WORK_GROUP_SIZE: 8192 bytes
+Image Pack Size in bytes: 4
+VisionGL-OpenCL-3D-BIN on C:\Users\Helto\source\repos\visiongl\images\mitosis\mitosis-5d%04d.tif, 1 operations
+
+CREATING IMAGE
+CHECKING NCHANNELS
+====== :
+ndim    = 3
+shape   = [    1,  256,  256,  336]    1,    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  256,65536]    0,    0,    0,    0,    0,    0,    0
+size    = 22020096
+npixels = 22020096
+bps     = 8
+CHECKING IF IS NULL
+CREATING COPY
+====== vglGray:
+Image @ 00F9A298: w x h x l = 256(256) x 256 x 336
+ndim = 3
+size = 22020096
+shape = {1, 256, 256, 336, 1, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 0FECB040
+nChannels = 1
+depth = IPL_DEPTH_8U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 0
+Context = 0
+====== vglGray:
+ndim    = 3
+shape   = [    1,  256,  256,  336]    1,    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  256,65536]    0,    0,    0,    0,    0,    0,    0
+size    = 22020096
+npixels = 22020096
+bps     = 8
+====== vglThresh:
+Image @ 00F99A58: w x h x l = 256(32) x 256 x 336
+ndim = 3
+size = 688128
+shape = {1, 256, 256, 336, 1, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 0E93F040
+nChannels = 1
+depth = IPL_DEPTH_1U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 0
+Context = 0
+====== vglThresh:
+ndim    = 3
+shape   = [    1,  256,  256,  336]    1,    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    8, 2048]    0,    0,    0,    0,    0,    0,    0
+size    = 688128
+npixels = 688128
+bps     = 1
+CREATED COPY
+Compiling CL_BIN/vglCl3dBinThreshold.cl
+Fisrt call to                  Threshold:           0.359695 s
+Time spent on        1         Threshold:           0.015507 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinSwap.cl
+First call to                       Swap:           0.283044 s
+Time spent on        1              Swap:           0.001160 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinToGray.cl
+Fisrt call to                  BinToGray:           0.306214 s
+Time spent on        1         BinToGray:           0.013619 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinNot.cl
+Fisrt call to                        Not:           0.177432 s
+Time spent on        1               Not:           0.001058 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinDilate.cl
+First call to           Dilation 3D cube:           0.393058 s
+Time spent on        1  Dilation 3D cube:           0.109269 s
+vglCheckContext: case 2
+Time spent on        1  Dilation 3D sep.:           0.135190 s
+vglCheckContext: case 2
+Time spent on        1 Dilation 3D cross:           0.090314 s
+vglCheckContext: case 2
+Time spent on        1 Dilation 3D angle:           0.157915 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinDilatePack.cl
+First call to           Dila pac 3D cube:           0.205917 s
+Time spent on        1  Dila pac 3D cube:           0.006988 s
+vglCheckContext: case 2
+Time spent on        1  Dila pac 3D sep.:           0.006271 s
+vglCheckContext: case 2
+Time spent on        1 Dila pac 3D cross:           0.006440 s
+vglCheckContext: case 2
+Time spent on        1 Dila pac 3D angle:           0.006884 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinErode.cl
+Fisrt call to                      Erode:           0.698343 s
+Time spent on        1   Erosion 3D cube:           0.368933 s
+vglCheckContext: case 2
+Time spent on        1   Erosion 3D sep.:           0.168310 s
+vglCheckContext: case 2
+Time spent on        1  Erosion 3D cross:           0.192184 s
+vglCheckContext: case 2
+Time spent on        1  Erosion 3D angle:           0.164184 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinErodePack.cl
+Fisrt call to                    Ero pac:           0.210070 s
+Time spent on        1   Ero pac 3D cube:           0.006139 s
+vglCheckContext: case 2
+Time spent on        1   Ero pac 3D sep.:           0.160723 s
+vglCheckContext: case 2
+Time spent on        1  Ero pac 3D cross:           0.007193 s
+vglCheckContext: case 2
+Time spent on        1  Ero pac 3D angle:           0.007069 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinRoi.cl
+First call to                        Roi:           0.250379 s
+Time spent on        1               Roi:           0.007668 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinMax.cl
+First call to                        Max:           0.181329 s
+Time spent on        1               Max:           0.001284 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinMin.cl
+First call to                        Min:           0.179360 s
+Time spent on        1               Min:           0.001143 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinSub.cl
+First call to                        Sub:           0.177631 s
+Time spent on        1               Sub:           0.001312 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglCl3dBinCopy.cl
+First call to              Copy GPU->GPU:           0.204656 s
+Time spent on        1     Copy GPU->GPU:           0.001087 s
+vglCheckContext: case 2
+First call to              Copy CPU->GPU:           0.001690 s
+Time spent on        1     Copy CPU->GPU:           0.001745 s
+First call to              Copy GPU->CPU:           0.001311 s
+Time spent on        1     Copy GPU->CPU:           0.001119 s

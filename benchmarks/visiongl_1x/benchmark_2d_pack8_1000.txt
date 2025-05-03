@@ -1,0 +1,123 @@
+Image Pack Size in bytes: 1
+found 3 platform(s) for opencl
+
+found 2 device(s)
+
+Check not implemented for Windows. Assuming that display is available.
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_EXTENSIONS:
+cl_khr_icd cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_3d_image_writes cl_intel_exec_by_local_thread cl_khr_spir cl_khr_dx9_media_sharing cl_intel_dx9_media_sharing cl_khr_d3d11_sharing cl_khr_gl_sharing cl_khr_fp64 
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_MEM_ALLOC_SIZE: 511.97 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_GLOBAL_MEM_SIZE: 2047.88 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_HEIGHT: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_WIDTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_PARAMETER_SIZE: 3840 bytes
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_WORK_GROUP_SIZE: 8192 bytes
+VisionGL-OpenCL-BIN on C:\tmp\saida2.tif, 1 operations
+
+CREATING IMAGE
+CHECKING NCHANNELS
+CHECKING IF IS NULL
+CREATING COPY
+====== vglBin:
+Image @ 00D69CD8: w x h x l = 6144(768) x 3584 x 1
+ndim = 2
+size = 2752512
+shape = {1, 6144, 3584, 1, 1, 1, 1, 1, 1, 1, 1}
+Ipl @ 00D6A948
+ndarray @ 00000000
+nChannels = 1
+depth = IPL_DEPTH_1U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 0
+Context = 0
+====== vglBin:
+ndim    = 2
+shape   = [    1, 6144, 3584]    1,    1,    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  768]    0,    0,    0,    0,    0,    0,    0,    0
+size    = 2752512
+npixels = 2752512
+bps     = 1
+CREATED COPY
+Compiling CL_BIN/vglClBinThreshold.cl
+First call to                  Threshold:           0.490759 s
+Time spent on        1         Threshold:           0.037475 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinSwap.cl
+First call to                       Swap:           0.214773 s
+Time spent on        1              Swap:           0.002786 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinToGray.cl
+First call to                  BinToGray:           0.334826 s
+Time spent on        1         BinToGray:           0.038068 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinNot.cl
+First call to                        Not:           0.185851 s
+Time spent on        1               Not:           0.001093 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinDilate.cl
+First call to           Dilation 2D cube:           0.849166 s
+Time spent on        1  Dilation 2D cube:           0.492991 s
+vglCheckContext: case 2
+Time spent on        1  Dilation 2D sep.:           0.387997 s
+vglCheckContext: case 2
+Time spent on        1 Dilation 2D cross:           0.372468 s
+vglCheckContext: case 2
+Time spent on        1 Dilation 2D angle:           0.314545 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinDilatePack.cl
+First call to           Dilation 2D cube:           0.222231 s
+Time spent on        1  Dila Pac 2D cube:           0.006569 s
+vglCheckContext: case 2
+Time spent on        1  Dilation 2D sep.:           0.006791 s
+vglCheckContext: case 2
+Time spent on        1 Dila Pac 2D cross:           0.005593 s
+vglCheckContext: case 2
+Time spent on        1 Dila Pac 2D angle:           0.004628 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinErode.cl
+First call to            Erosion 2D cube:           0.756942 s
+Time spent on        1   Erosion 2D cube:           0.447092 s
+vglCheckContext: case 2
+Time spent on        1   Erosion 2D sep.:           0.341831 s
+vglCheckContext: case 2
+Time spent on        1  Erosion 2D cross:           0.315636 s
+vglCheckContext: case 2
+Time spent on        1  Erosion 2D angle:           0.255883 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinErodePack.cl
+First call to            Ero pac 2D cube:           0.244147 s
+Time spent on        1   Ero Pac 2D cube:           0.007240 s
+vglCheckContext: case 2
+Time spent on        1   Ero pac 2D sep.:           0.006614 s
+vglCheckContext: case 2
+Time spent on        1  Ero Pac 2D cross:           0.005269 s
+vglCheckContext: case 2
+Time spent on        1  Ero Pac 2D angle:           0.004618 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinRoi.cl
+First call to                        Roi:           0.361923 s
+Time spent on        1               Roi:           0.024552 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinMax.cl
+First call to                        Max:           0.200102 s
+Time spent on        1               Max:           0.001308 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinMin.cl
+First call to                        Min:           0.182869 s
+Time spent on        1               Min:           0.001274 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinSub.cl
+First call to                        Sub:           0.167096 s
+Time spent on        1               Sub:           0.001316 s
+vglCheckContext: case 2
+Compiling CL_BIN/vglClBinCopy.cl
+First call to              Copy GPU->GPU:           0.167641 s
+Time spent on        1     Copy GPU->GPU:           0.001033 s
+vglCheckContext: case 2
+First call to              Copy CPU->GPU:           0.001493 s
+Time spent on        1     Copy CPU->GPU:           0.001159 s
+First call to              Copy GPU->CPU:           0.001310 s
+Time spent on        1     Copy GPU->CPU:           0.001109 s

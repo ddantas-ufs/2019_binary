@@ -1,0 +1,418 @@
+Image Pack Size in byte : 1
+outString = %s\%s\out_%%05d.pbm
+found 3 platform(s) for opencl
+
+found 2 device(s)
+
+Check not implemented for Windows. Assuming that display is available.
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_EXTENSIONS:
+cl_khr_icd cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_3d_image_writes cl_intel_exec_by_local_thread cl_khr_spir cl_khr_dx9_media_sharing cl_intel_dx9_media_sharing cl_khr_d3d11_sharing cl_khr_gl_sharing cl_khr_fp64 
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_MEM_ALLOC_SIZE: 511.97 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_GLOBAL_MEM_SIZE: 2047.88 mb
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_DEPTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_HEIGHT: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_IMAGE3D_MAX_WIDTH: 2048 px
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_PARAMETER_SIZE: 3840 bytes
+c:\users\helto\source\repos\visiongl\src\vglclimage.cpp: vglClInit: CL_DEVICE_MAX_WORK_GROUP_SIZE: 8192 bytes
+c:\users\helto\source\repos\visiongl\src\iplimage.cpp:iplReleaseImage: Warning: image is null
+
+
+====== Input image:
+Image @ 010EDE58: w x h x l = 256(256) x 256 x 2
+ndim = 4
+size = 22020096
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 07629040
+nChannels = 1
+depth = IPL_DEPTH_8U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 0
+Context = 1
+====== Input image:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  256,65536,131072]    0,    0,    0,    0,    0,    0
+size    = 22020096
+npixels = 22020096
+bps     = 8
+
+
+====== Input image:
+Image @ 010EDE58: w x h x l = 256(256) x 256 x 2
+ndim = 4
+size = 22020096
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 07629040
+nChannels = 1
+depth = IPL_DEPTH_8U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 1
+Context = 1
+====== vglThresh:
+Image @ 010ED358: w x h x l = 256(32) x 256 x 2
+ndim = 4
+size = 2752512
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 0BE1B040
+nChannels = 1
+depth = IPL_DEPTH_1U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 1
+Context = 0
+====== vglThresh:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,   32, 8192,16384]    0,    0,    0,    0,    0,    0
+size    = 2752512
+npixels = 2752512
+bps     = 1
+====== vglRoi:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,   32, 8192,16384]    0,    0,    0,    0,    0,    0
+size    = 2752512
+npixels = 2752512
+bps     = 1
+====== seAngle:
+ndim    = 2
+shape   = [    1,    3,    3]    1,    1,    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    3]    0,    0,    0,    0,    0,    0,    0,    0
+size    = 9
+npixels = 9
+bps     = 8
+i =   0 { 0 }   0.0000  0.0000  0.0000 
+i =   3 { 1 }   0.0000  1.0000  1.0000 
+i =   6 { 2 }   0.0000  1.0000  0.0000 
+====== seMean:
+ndim    = 4
+shape   = [    1,    3,    3,    3,    3]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    3,    9,   27]    0,    0,    0,    0,    0,    0
+size    = 81
+npixels = 81
+bps     = 8
+i =   0 { 0  0  0 }   0.0123  0.0123  0.0123 
+i =   3 { 0  0  1 }   0.0123  0.0123  0.0123 
+i =   6 { 0  0  2 }   0.0123  0.0123  0.0123 
+i =   9 { 0  1  0 }   0.0123  0.0123  0.0123 
+i =  12 { 0  1  1 }   0.0123  0.0123  0.0123 
+i =  15 { 0  1  2 }   0.0123  0.0123  0.0123 
+i =  18 { 0  2  0 }   0.0123  0.0123  0.0123 
+i =  21 { 0  2  1 }   0.0123  0.0123  0.0123 
+i =  24 { 0  2  2 }   0.0123  0.0123  0.0123 
+i =  27 { 1  0  0 }   0.0123  0.0123  0.0123 
+i =  30 { 1  0  1 }   0.0123  0.0123  0.0123 
+i =  33 { 1  0  2 }   0.0123  0.0123  0.0123 
+i =  36 { 1  1  0 }   0.0123  0.0123  0.0123 
+i =  39 { 1  1  1 }   0.0123  0.0123  0.0123 
+i =  42 { 1  1  2 }   0.0123  0.0123  0.0123 
+i =  45 { 1  2  0 }   0.0123  0.0123  0.0123 
+i =  48 { 1  2  1 }   0.0123  0.0123  0.0123 
+i =  51 { 1  2  2 }   0.0123  0.0123  0.0123 
+i =  54 { 2  0  0 }   0.0123  0.0123  0.0123 
+i =  57 { 2  0  1 }   0.0123  0.0123  0.0123 
+i =  60 { 2  0  2 }   0.0123  0.0123  0.0123 
+i =  63 { 2  1  0 }   0.0123  0.0123  0.0123 
+i =  66 { 2  1  1 }   0.0123  0.0123  0.0123 
+i =  69 { 2  1  2 }   0.0123  0.0123  0.0123 
+i =  72 { 2  2  0 }   0.0123  0.0123  0.0123 
+i =  75 { 2  2  1 }   0.0123  0.0123  0.0123 
+i =  78 { 2  2  2 }   0.0123  0.0123  0.0123 
+====== seCube:
+ndim    = 4
+shape   = [    1,    3,    3,    3,    3]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    3,    9,   27]    0,    0,    0,    0,    0,    0
+size    = 81
+npixels = 81
+bps     = 8
+i =   0 { 0  0  0 }   1.0000  1.0000  1.0000 
+i =   3 { 0  0  1 }   1.0000  1.0000  1.0000 
+i =   6 { 0  0  2 }   1.0000  1.0000  1.0000 
+i =   9 { 0  1  0 }   1.0000  1.0000  1.0000 
+i =  12 { 0  1  1 }   1.0000  1.0000  1.0000 
+i =  15 { 0  1  2 }   1.0000  1.0000  1.0000 
+i =  18 { 0  2  0 }   1.0000  1.0000  1.0000 
+i =  21 { 0  2  1 }   1.0000  1.0000  1.0000 
+i =  24 { 0  2  2 }   1.0000  1.0000  1.0000 
+i =  27 { 1  0  0 }   1.0000  1.0000  1.0000 
+i =  30 { 1  0  1 }   1.0000  1.0000  1.0000 
+i =  33 { 1  0  2 }   1.0000  1.0000  1.0000 
+i =  36 { 1  1  0 }   1.0000  1.0000  1.0000 
+i =  39 { 1  1  1 }   1.0000  1.0000  1.0000 
+i =  42 { 1  1  2 }   1.0000  1.0000  1.0000 
+i =  45 { 1  2  0 }   1.0000  1.0000  1.0000 
+i =  48 { 1  2  1 }   1.0000  1.0000  1.0000 
+i =  51 { 1  2  2 }   1.0000  1.0000  1.0000 
+i =  54 { 2  0  0 }   1.0000  1.0000  1.0000 
+i =  57 { 2  0  1 }   1.0000  1.0000  1.0000 
+i =  60 { 2  0  2 }   1.0000  1.0000  1.0000 
+i =  63 { 2  1  0 }   1.0000  1.0000  1.0000 
+i =  66 { 2  1  1 }   1.0000  1.0000  1.0000 
+i =  69 { 2  1  2 }   1.0000  1.0000  1.0000 
+i =  72 { 2  2  0 }   1.0000  1.0000  1.0000 
+i =  75 { 2  2  1 }   1.0000  1.0000  1.0000 
+i =  78 { 2  2  2 }   1.0000  1.0000  1.0000 
+strelshape[0] = 1
+strelshape[1] = 1
+strelshape[2] = 1
+strelshape[3] = 1
+strelshape[4] = 1
+strelshape[5] = 1
+strelshape[6] = 1
+strelshape[7] = 1
+strelshape[8] = 1
+strelshape[9] = 1
+strelshape[10] = 1
+creating separated strel: ndim = 4
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    3,    1,    1,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    3,    3,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   1.0000  1.0000  1.0000 
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    3,    1,    1,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    3,    3,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   0.3333  0.3333  0.3333 
+creating separated strel: ndim = 4
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    3,    1,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    3,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   1.0000  1.0000  1.0000 
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    3,    1,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    3,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   0.3333  0.3333  0.3333 
+creating separated strel: ndim = 4
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    1,    3,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    1,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   1.0000  1.0000  1.0000 
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    1,    3,    1]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    1,    3]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   0.3333  0.3333  0.3333 
+creating separated strel: ndim = 4
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    1,    1,    3]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    1,    1]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   1.0000  1.0000  1.0000 
+====== VglStrEl->print():
+ndim    = 4
+shape   = [    1,    1,    1,    1,    3]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,    1,    1,    1]    0,    0,    0,    0,    0,    0
+size    = 3
+npixels = 3
+bps     = 8
+i =   0 { 0  0  0 }   0.3333  0.3333  0.3333 
+creating separated strel: done
+
+
+====== Input image:
+Image @ 010EDE58: w x h x l = 256(256) x 256 x 2
+ndim = 4
+size = 22020096
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 07629040
+nChannels = 1
+depth = IPL_DEPTH_8U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 1
+Context = 1
+====== Input image:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  256,65536,131072]    0,    0,    0,    0,    0,    0
+size    = 22020096
+npixels = 22020096
+bps     = 8
+
+
+====== vglThresh:
+Image @ 010ED358: w x h x l = 256(32) x 256 x 2
+ndim = 4
+size = 2752512
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 0BE1B040
+nChannels = 1
+depth = IPL_DEPTH_1U
+TEX = -1
+FBO = -1
+OCL @ 00000000
+clForceAsBuf = 1
+Context = 0
+====== vglThresh:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,   32, 8192,16384]    0,    0,    0,    0,    0,    0
+size    = 2752512
+npixels = 2752512
+bps     = 1
+
+
+====== vglRoi:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,   32, 8192,16384]    0,    0,    0,    0,    0,    0
+size    = 2752512
+npixels = 2752512
+bps     = 1
+
+
+Compiling CL_ND/vglClNdCopy.cl
+First call to             gray byte Copy:       0.185445 s
+Time spent on        1    gray byte Copy:       0.007538 s 
+vglCheckContext: case 2
+====== vglGray:
+Image @ 010ED2A8: w x h x l = 256(256) x 256 x 2
+ndim = 4
+size = 22020096
+shape = {1, 256, 256, 2, 168, 1, 1, 1, 1, 1, 1}
+Ipl @ 00000000
+ndarray @ 0A908040
+nChannels = 1
+depth = IPL_DEPTH_8U
+TEX = -1
+FBO = -1
+OCL @ 070CE9E0
+clForceAsBuf = 1
+Context = 9
+====== vglGray:
+ndim    = 4
+shape   = [    1,  256,  256,    2,  168]    1,    1,    1,    1,    1,    1
+offset  = [    1,    1,  256,65536,131072]    0,    0,    0,    0,    0,    0
+size    = 22020096
+npixels = 22020096
+bps     = 8
+Compiling CL_BIN/vglClNdBinThreshold.cl
+First call to                  Threshold:       0.278822 s
+Time spent on        1         Threshold:       0.078949 s 
+vglCheckContext: case 2
+vgThresh->widthStep words = 32
+vgThresh->widthStep = 32
+vgThresh->widthIn   = 256
+First call to              bin byte Copy:       0.002691 s
+Time spent on        1     bin byte Copy:       0.001185 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinCopy.cl
+First call to              bin word Copy:       0.160917 s
+Time spent on        1     bin word Copy:       0.001436 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinToGray.cl
+First call to                  BinToGray:       0.302599 s
+Time spent on        1         BinToGray:       0.102179 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinSwap.cl
+First call to             swap byte Copy:       0.185053 s
+Time spent on        1    swap byte Copy:       0.005986 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinNot.cl
+First call to                        Not:       0.163768 s
+Time spent on        1               Not:       0.001218 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinRoi.cl
+First call to                        Roi:       0.196147 s
+Time spent on        1               Roi:       0.019749 s 
+vglCheckContext: case 2
+
+[    0,   12,   12,    0,    8,    0,    0,    0,    0,    0,    0]
+[    0,  204,  204,    1,  134,    0,    0,    0,    0,    0,    0]
+Compiling CL_BIN/vglClNdBinDilate.cl
+First call to           Dilation nD cube:       83.714710 s
+Time spent on        1  Dilation nD cube:       82.067410 s 
+vglCheckContext: case 2
+Time spent on        1  Dilation nD sep.:       11.956604 s 
+vglCheckContext: case 2
+Time spent on        1 Dilation nD cross:       6.624048 s 
+vglCheckContext: case 2
+Time spent on        1 Dilation nD angle:       1.574797 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinDilatePack.cl
+First call to           Dila pac nD cube:       2.540207 s
+Time spent on        1  Dila pac nD cube:       2.304457 s 
+vglCheckContext: case 2
+Time spent on        1  Dila pac nD sep.:       0.426001 s 
+vglCheckContext: case 2
+Time spent on        1 Dila pac nD cross:       0.257055 s 
+vglCheckContext: case 2
+Time spent on        1 Dila pac nD angle:       0.066275 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinErode.cl
+First call to            Erosion nD cube:       8.348748 s
+Time spent on        1   Erosion nD cube:       7.890893 s 
+vglCheckContext: case 2
+Time spent on        1   Erosion nD sep.:       4.589796 s 
+vglCheckContext: case 2
+Time spent on        1  Erosion nD cross:       1.329430 s 
+vglCheckContext: case 2
+Time spent on        1  Erosion nD angle:       0.650863 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinErodePack.cl
+First call to            Ero pac nD cube:       2.659372 s
+Time spent on        1   Ero pac nD cube:       2.451864 s 
+vglCheckContext: case 2
+Time spent on        1   Ero pac nD sep.:       0.405979 s 
+vglCheckContext: case 2
+Time spent on        1  Ero pac nD cross:       0.282072 s 
+vglCheckContext: case 2
+Time spent on        1  Ero pac nD angle:       0.065044 s 
+vglCheckContext: case 2
+Compiling CL_ND/vglClNdNot.cl
+First call to                   Negation:       0.173368 s
+Time spent on        1          Negation:       0.001097 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinMax.cl
+First call to                    Maximum:       0.166542 s
+Time spent on        1           Maximum:       0.001367 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinMin.cl
+First call to                    Minimum:       0.166008 s
+Time spent on        1           Minimum:       0.001586 s 
+vglCheckContext: case 2
+Compiling CL_BIN/vglClNdBinSub.cl
+First call to                Subtraction:       0.167170 s
+Time spent on        1       Subtraction:       0.001426 s 
+vglCheckContext: case 2
+vglCheckContext: case 2
+First call to              Copy CPU->GPU:       0.002082 s 
+Time spent on        1     Copy CPU->GPU:       0.002227 s 
+First call to              Copy GPU->CPU:       0.001562 s 
+Time spent on        1     Copy GPU->CPU:       0.005324 s 

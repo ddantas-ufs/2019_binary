@@ -1,0 +1,14 @@
+Times of execution in CPU:
+
+copy                   = 0.000596
+max                    = 0.566432
+dilate(cross)          = 70.207708
+dilate(hypercube)      = 69.974955
+dilate sep cube        = 88.372150
+graythresh             = 2.144079
+mean                   = 31.193091
+negative               = 1.017260
+
+time_copy_atrib      = 1.798151
+time_atrib           = 0.013997
+time_copy_final      = 1.784155

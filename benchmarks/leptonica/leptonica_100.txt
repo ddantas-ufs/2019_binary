@@ -1,0 +1,26 @@
+Image dimensions: (6144, 3584)
+Image depth: 8 bpp
+Writing output to: C:\tmp\output\out_leptonica_gray.tif
+Writing output to: C:\tmp\output\out_leptonica_mask_gray.tif
+Time spent on      100         Threshold:           1.537871 s
+Writing output to: C:\tmp\output\out_leptonica_bw.tif
+Writing output to: C:\tmp\output\out_leptonica_mask_bw.tif
+Time spent on      100         Not:           0.044592 s
+Writing output to: C:\tmp\output\out_leptonica_invert_bw.tif
+Time spent on      100         Or:           0.182011 s
+Writing output to: C:\tmp\output\out_leptonica_max_bw.tif
+Time spent on      100         Copy:           0.056607 s
+Writing output to: C:\tmp\output\out_leptonica_copy_bw.tif
+Time spent on      100         Unpack:           2.834262 s
+Writing output to: C:\tmp\output\out_leptonica_unpack_gray.tif
+Time spent on      100         Dilate Cross Rasterop:           0.869574 s
+Writing output to: C:\tmp\output\out_leptonica_dilate_cross_rasterop.tif
+Time spent on      100         Dilate Cube Rasterop:           1.827912 s
+Writing output to: C:\tmp\output\out_leptonica_dilate_cube_rasterop.tif
+Time spent on      100         Dilate Sep Cube Rasterop:           0.614377 s
+Writing output to: C:\tmp\output\out_leptonica_dilate_sepcube_rasterop.tif
+Time spent on      100         Dilate Sep Cube DWA:           2.607368 s
+Writing output to: C:\tmp\output\out_leptonica_dilate_sepcube_dwa_partial.tif
+Writing output to: C:\tmp\output\out_leptonica_dilate_sepcube_dwa_final.tif
+Time spent on      100         Dilate Sep Cube DWA v2:        1.047654 s
+Writing output to: C:\tmp\output\out_leptonica_dilate_sepcube_dwa_v2_final.tif
